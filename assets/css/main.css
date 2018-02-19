@@ -1,0 +1,150 @@
+body, html, * {
+	margin: 0;
+	padding: 0;
+}
+::selection {
+	text-shadow: 0 0 10px #ba68c8;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+}
+
+nav {
+	overflow-x: hidden;
+	position: relative;
+}
+	span#logo {
+		float: left;
+		padding: 15px;
+	}
+	div.nav ul {
+		float: right;
+	}
+	div.nav li {
+		display: inline-block;
+	}
+	div.nav li a {
+		height: 100%;
+		text-decoration: none;
+		display: block;
+		padding: 15px;
+		transition: background-color 1s, color 1s;
+
+	}
+	div.nav li a:visited {
+		color: black;
+	}
+	div.nav li a:hover {
+		background-color: gray;
+		color: white;
+	}
+
+	@media only screen and (max-width: 520px) {
+		span#logo {
+			width: 100vw;
+			margin: 0 auto;
+		}
+	}
+
+div.title {
+	background-image: url("../img/bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100vw;
+	height: 500px;
+	box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.8);
+	text-align: center;
+	vertical-align: middle;
+	line-height: 500px;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+	div.title h2 {
+		color: white;
+		text-transform: uppercase;
+		font-size: 18px;
+		letter-spacing: 2px;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+div.section {
+	width: 100vw;
+	background-color: white;
+	padding: 20px;
+	height: auto;
+}
+	.section.light {
+		background-color: white;
+	}
+	.section.darken {
+		background-color: lightgray;
+	}
+	.section.center {
+		text-align: center;
+		margin: 0 auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.section h1 {
+		font-size: 24px;
+	}
+	.section .content {
+		float: left;
+		display: inline-block;
+		width: 50%;
+		height: auto;
+	}
+	.section .image {
+		display: inline-block;
+		width: 50%;
+	}
+		.section .image img {
+			width: 50%;
+			margin: 0 auto;
+			display: block;
+		}
+
+span.btn {
+	border-style: solid;
+	border-width: 1px;
+	padding: 10px;
+	min-width: 30vw;
+	transition: background-color 1s, color 1s;
+	text-decoration: none;
+}
+	span.btn:hover {
+		background-color: gray;
+		color: white;
+	}
+	span.btn a {
+		text-decoration: none;
+	}
+
+footer {
+	width: 100vw;
+	padding: 30px;
+	font-size: 15px;
+	color: #7c8081;
+	text-align: center;
+	text-decoration: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+	footer a {
+		text-decoration: none;
+		transition: color 1s;
+		color: #7c8081;
+		border: 0;
+	}
+	footer a:visited {
+		color: #7c8081;
+	}
+	footer a:hover {
+		color: #424444;
+	}
+
+
+	
