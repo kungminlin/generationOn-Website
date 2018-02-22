@@ -1,33 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>generationOn LAHS</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<meta property="og:title" content="generationOn LAHS">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://generationon.lahs.club">
-	<!-- <meta property="og:image" content="./assets/images/main-image.jpg"> -->
-	<meta property="og:description" content="there's some description.">
-
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
-	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-
+	<?php include('assets/templates/head.php') ?>
 </head>
 <body>
-	<nav>
-		<div class="nav">
-			<span id="logo">generationOn LAHS</span>
-			<ul>
-				<li>
-					<a href="#">Home</a></li><li>
-				<a href="#">About</a></li><li>
-				<a href="#">Projects</a></li><li>
-				<a href="#">Contact Us</a></li>
-			</ul>
-		</div>
-	</nav>
+	<?php include('assets/templates/nav.php') ?>
 
 	<div class="title">
 		<span id="t_logo"></span>
@@ -35,26 +12,33 @@
 	</div>
 	<div class="section light">
 		<div class="content">
-			<h1>Community Service</h1>
-			<br />
-			<p>Lorem Episolon I don't speak French</p>
+			<div class="align-mid">
+				<h1>Community Service</h1>
+				<br />
+				<p>Lorem Episolon I don't speak French</p>
+			</div>
 		</div>
-		<div class="image"><img src="assets/img/img.png"></div>
+		<div class="content"><img src="assets/img/img.png"></div>
 	</div>
 
 	<div class="section darken">
-		<div class="content-right">
-			<p>tests</p>
+		<div class="content"><img src="assets/img/img.png"></div>
+		<div class="content">
+			<div class="align-mid">
+				<h1>Projects</h1>
+				<br />
+				<p>Check out our projects! They're dope!</p>
+			</div>
 		</div>
 	</div>
 
-	<!-- <div class="section center">
-		<span class="btn"><a href="#">Contact Us!</a></span>
-	</div> -->
+	<div class="section bottom">
+		<div class="bottom-content">
+			<span class="btn"><a href="#">Contact Us!</a></span>
+		</div>
+	</div>
 
-	<footer>
-		<p>&copy; 2018 <a href="https://generationon.lahs.club">LAHS generationOn Club</a> | Website created by Kung-Min Lin in association with <a href="https://lahs.club">LAHS Hack Club</a></p>
-	</footer>
+	<?php include('assets/templates/footer.php') ?>
 
 	<script src="assets/js/index.js"></script>
 

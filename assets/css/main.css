@@ -6,6 +6,19 @@ body, html, * {
 	text-shadow: 0 0 10px #ba68c8;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
+p {
+	font-weight: 100;
+}
+
+h1 {
+	font-weight: 700;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	overflow-x: hidden;
@@ -14,10 +27,13 @@ body {
 nav {
 	overflow-x: hidden;
 	position: relative;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 	span#logo {
 		float: left;
 		padding: 15px;
+		font-family: 'Lato', sans-serif;
+		font-weight: 700;
 	}
 	div.nav ul {
 		float: right;
@@ -30,7 +46,9 @@ nav {
 		text-decoration: none;
 		display: block;
 		padding: 15px;
-		transition: background-color 1s, color 1s;
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+		transition: background-color 0.5s, color 0.5s;
 
 	}
 	div.nav li a:visited {
@@ -61,7 +79,13 @@ div.title {
 	vertical-align: middle;
 	line-height: 500px;
 	text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+	box-sizing: border-box;
+	color: white;
 }
+	div.title h1 {
+		color: white;
+		text-transform: uppercase;
+	}
 	div.title h2 {
 		color: white;
 		text-transform: uppercase;
@@ -71,40 +95,116 @@ div.title {
 	}
 
 div.section {
-	width: 100vw;
+	min-width: 100vw;
 	background-color: white;
-	padding: 20px;
-	height: auto;
+	display: table-row;
 }
 	.section.light {
 		background-color: white;
 	}
 	.section.darken {
-		background-color: lightgray;
+		background-color: #f5f5f5;
 	}
 	.section.center {
+		display: table-cell;
 		text-align: center;
-		margin: 0 auto;
-		padding-left: 0;
-		padding-right: 0;
+		vertical-align: middle;
+		padding: 30px;
+		box-sizing: border-box;
 	}
+		.section.center h1 {
+			font-weight: 700;
+		}
 	.section h1 {
 		font-size: 24px;
 	}
 	.section .content {
 		float: left;
-		display: inline-block;
+		display: table-cell;
 		width: 50%;
-		height: auto;
+		height: 100%;
+		text-align: left;
+		padding: 20px;
+		box-sizing: border-box;
+		vertical-align: middle;
 	}
-	.section .image {
-		display: inline-block;
-		width: 50%;
-	}
-		.section .image img {
-			width: 50%;
+		.section .content .align-mid {
+			margin: 0 auto;
+			width: 70%;
+		}
+		.section .content img {
+			width: 70%;
 			margin: 0 auto;
 			display: block;
+		}
+
+	.section.bottom {
+		background-image: url("/assets/img/bg.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment: fixed;
+		width: 100vw;
+		height: 200px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 30px;
+		padding-left: 0;
+		padding-right: 0;
+		display: table;
+		color: white;
+	}
+			.section.bottom .bottom-content {
+				display: table-cell;
+				vertical-align: middle;
+				color: white;
+			}
+			.bottom-content span a {
+				color: white;
+			}
+
+div.officers {
+	display: inline-block;
+	min-width: 70%;
+	width: 70%;
+	margin: 0 auto;
+	display: block;
+	box-sizing: border-box;
+}
+	.officers h1 {
+		text-align: center;
+		padding: 20px;
+		font-weight: 700;
+	}
+	.officers .profile {
+		width: 50%;
+		float: left;
+		display: inline-block;
+		box-sizing: border-box;
+	}
+	.profile .prof_pic {
+		width: 30%;
+		display: inline-block;
+		float: left;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+		.profile .prof_pic img {
+			width: 100%;
+		}
+	.profile .prof_desc {
+		width: 70%;
+		float: left;
+		box-sizing: border-box;
+		padding: 10px;
+	}
+		.prof_desc h2 {
+			font-size: 20px;
+			font-weight: 400;
+		}
+		.prof_desc h3 {
+			font-size: 15px;
+			font-weight: 300;
 		}
 
 span.btn {
