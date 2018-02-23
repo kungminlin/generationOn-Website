@@ -13,11 +13,10 @@
 		</div>
 		<div class="content">
 			<form>
-				<input type="text" id="fname" name="firstname" placeholder="First Name">
-				<input type="text" id="lname" name="lastname" placeholder="Last Name">
+				<input type="text" id="name" name="name" placeholder="Name">
 				<input type="email" id="email" name="email" placeholder="Email">
-				<input type="tel" id="phone" name="phone" placeholder="123-456-7890">
-				<textarea placeholder="Comment"></textarea>
+				<input type="text" id="subject" name="subject" placeholder="Subject">
+				<textarea id="message" name="message" placeholder="Message"></textarea>
 				<input type="submit" value="Submit">
 			</form>
 		</div>
